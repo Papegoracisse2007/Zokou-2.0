@@ -36,7 +36,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
 ║📌 *Heure* -> ${temps}
 ║📌 *Mémoire* -> ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║📌 *Plateforme* -> ${os.platform()}
-║📌 *Développeurs* -> Djalega++ 
+║📌 *Développeurs* -> Furie-Ai 
 ║ & ᚛M๏𝓷keℽ D Lบffy᚜
 ╚═════ஜ۩۞۩ஜ═══╝\n\n`;
     
@@ -55,14 +55,14 @@ Je me nomme *${s.NOM_BOT}*, un bot développé par *La team Zokou*.
 
     menuMsg += `\n➖➖➖➖➖➖➖➖➖
 ✔️  *Pour utiliser une commande, tapez "${prefixe}<nom de la commande>"*.
-✔️  *Fait avec node.js || Zokou_2.0-MD*
+✔️  *Fait avec node.js || Furie-MD*
 `;
 
    var lien = botpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Furie-bot*, développé par Furie-Ai" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -72,7 +72,7 @@ Je me nomme *${s.NOM_BOT}*, un bot développé par *La team Zokou*.
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Furie-Bot*, développé par Furie-Ai" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
